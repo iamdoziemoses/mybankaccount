@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bank Account</title>
+    <script
+      src="https://kit.fontawesome.com/3a09121867.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav id="nav" class="nav-section">
+        <div class="nav__data" id="nav-data">
+          <h1 class="nav__data-name" id="user-name"></h1>
+          <input
+            type="text"
+            class="nav__data-input"
+            id="user-input"
+            placeholder="input your username"
+          />
+          <button class="login-btn" id="loginBtn">Log in</button>
+          <button class="logout-btn" id="logoutBtn">Log out</button>
+        </div>
+
+        <div class="nav__toggler">
+          <i class="fa fa-bars nav__toggler-icon" id="nav__toggle"></i>
+          <i class="fa fa-times nav__toggler-icon2" id="nav__toggle2"></i>
+        </div>
+      </nav>
+
+      <main id="main">
+        <section class="savings">
+          <div class="savings__data">
+            <h2 class="savings__data-title">Your Account Balance:</h2>
+            <p class="savings__data-description" id="saving-value">⇖-----(login)</p>
+          </div>
+        </section>
+
+        <section class="actions">
+          <div class="actions__data">
+            <div class="input-data">
+              <h3>Enter the amount you want to withdraw or deposit</h3>
+              <input
+                id="accValue"
+                class="acc-value"
+                type="text"
+                placeholder="your amount"
+              />
+            </div>
+            <button class="actions__data-btn" id="depositBtn">Deposit</button>
+            <button class="actions__data-btn2" id="withdrawBtn">Withdraw</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
